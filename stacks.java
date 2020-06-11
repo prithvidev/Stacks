@@ -63,8 +63,9 @@ public class stacks {
         s ss = new s();
         System.out.println("*********Stack operations using array*********\n");  
         System.out.println("\n------------------------------------------------\n");  
-         while(choice != 4)  
-    {  
+        
+        while(choice != 5)  
+         {   
         System.out.println("\nChose one from the below options...\n");  
         System.out.println("\n1.Push\n2.Pop\n3.Empty\n4.peek\n5.Exit");  
         System.out.println("\n Enter your choice \n");        
@@ -86,8 +87,11 @@ public class stacks {
             case 3:
             {
                 boolean w = ss.isempty();
-                if(w == true){
-                    System.out.println("");
+                if(w == false){
+                    System.out.println("STACK IS EMPTY");
+                }
+                else{
+                    System.out.println("STACK IS NOT EMPTY");
                 }
                 break;
             }
