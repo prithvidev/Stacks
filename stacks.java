@@ -1,6 +1,3 @@
-
-package Stacks;
-
 import java.util.*;
 
    
@@ -53,6 +50,13 @@ import java.util.*;
             return x; 
     }
     }
+    
+    void display(){
+        System.out.println("Stack Elements:\n");
+        for(int i=top;i>=0;i--){
+            System.out.println(a[i]);
+        }
+    }
 }
 
 public class stacks {
@@ -64,10 +68,10 @@ public class stacks {
         System.out.println("*********Stack operations using array*********\n");  
         System.out.println("\n------------------------------------------------\n");  
         
-        while(choice != 5)  
+        while(choice != 6)  
          {   
         System.out.println("\nChose one from the below options...\n");  
-        System.out.println("\n1.Push\n2.Pop\n3.Empty\n4.peek\n5.Exit");  
+        System.out.println("\n1.Push\n2.Pop\n3.Empty\n4.peek\n5.Display\n6.Exit");  
         System.out.println("\n Enter your choice \n");        
         choice = sc.nextInt();  
         switch(choice){
@@ -99,6 +103,11 @@ public class stacks {
             {
                 int y =ss.peek();
                 System.out.println("Peek Elements:"+y);
+                break;
+            }
+            case 5:
+            {
+                ss.display();
                 break;
             }
             default:{
