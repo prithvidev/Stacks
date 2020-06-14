@@ -1,2 +1,2 @@
 # Stacks
-Stacks implementatoon using array and linked lists.
+Stacks implementation using array and linked lists.
